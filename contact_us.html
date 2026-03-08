@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | Lyfter</title>
+    <style>
+      :root {
+        --bg: #0b0f14;
+        --card: rgba(255, 255, 255, 0.06);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.72);
+        --border: rgba(255, 255, 255, 0.14);
+        --accent: #f4b25a;
+        --accent2: #6d3b17;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #fbfbfc;
+          --card: rgba(0, 0, 0, 0.04);
+          --text: rgba(0, 0, 0, 0.9);
+          --muted: rgba(0, 0, 0, 0.65);
+          --border: rgba(0, 0, 0, 0.12);
+          --accent: #c97517;
+          --accent2: #6d3b17;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+          Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        background: radial-gradient(
+            900px 480px at 10% 10%,
+            rgba(244, 178, 90, 0.22),
+            transparent 55%
+          ),
+          radial-gradient(
+            840px 520px at 90% 20%,
+            rgba(109, 59, 23, 0.18),
+            transparent 60%
+          ),
+          var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+      }
+
+      header {
+        padding: 56px 20px 24px;
+        max-width: 980px;
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 12px;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--card);
+        backdrop-filter: blur(10px);
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--accent), var(--accent2));
+      }
+
+      h1 {
+        margin: 14px 0 8px;
+        font-size: clamp(28px, 4vw, 38px);
+        letter-spacing: 0.2px;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        max-width: 70ch;
+      }
+
+      main {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 20px 56px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      @media (min-width: 760px) {
+        .grid {
+          grid-template-columns: 1.2fr 0.8fr;
+          gap: 18px;
+        }
+      }
+
+      .card {
+        border: 1px solid var(--border);
+        background: var(--card);
+        border-radius: 18px;
+        padding: 18px;
+        backdrop-filter: blur(10px);
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      p {
+        margin: 0 0 12px;
+        color: var(--muted);
+      }
+
+      ol,
+      ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      li {
+        margin: 8px 0;
+      }
+
+      .pill {
+        display: inline-block;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 2px 10px;
+        font-size: 12px;
+        color: var(--text);
+        background: rgba(255, 255, 255, 0.04);
+        vertical-align: middle;
+      }
+
+      footer {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 18px 20px 40px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: rgba(244, 178, 90, 0.6);
+        text-underline-offset: 3px;
+      }
+
+      .meta {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .note {
+        border-left: 3px solid var(--accent);
+        padding: 10px 12px;
+        border-radius: 12px;
+        background: rgba(244, 178, 90, 0.08);
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand" aria-label="Lyfter">
+        <span class="dot" aria-hidden="true"></span>
+        <strong>Lyfter</strong>
+        <span class="pill">Support</span>
+      </div>
+      <h1>Contact Us</h1>
+      <p class="subtitle">
+        Need help or have a question? You can reach us directly from inside the
+        Lyfter mobile app.
+      </p>
+    </header>
+
+    <main>
+      <div class="grid">
+        <section class="card">
+          <h2>How to contact us from the app</h2>
+          <p>
+            The fastest way to reach Lyfter Support is through the
+            <strong>Contact Us</strong> section in the app.
+          </p>
+          <ol>
+            <li>Open the <strong>Lyfter</strong> mobile app.</li>
+            <li>Go to <strong>Profile</strong>.</li>
+            <li>Select <strong>Contact Us</strong>.</li>
+            <li>
+              Send us a message with details (issue description, phone number
+              used to sign in, and any screenshots if available).
+            </li>
+          </ol>
+
+          <p class="note">
+            After you send a message, our team will review it and get back to
+            you within <strong>4–5 business days</strong>.
+          </p>
+        </section>
+
+        <aside class="card">
+          <h2>Account deletion request</h2>
+          <p>
+            You can also request <strong>account deletion</strong> from the same
+            place:
+          </p>
+          <ul>
+            <li>Open <strong>Profile</strong> → <strong>Contact Us</strong>.</li>
+            <li>
+              Send a message stating that you want to delete your account.
+            </li>
+            <li>
+              Include the phone number (or account identifier) associated with
+              your account.
+            </li>
+          </ul>
+
+          <p class="meta">
+            For security reasons, we may ask for additional information to
+            verify ownership before processing deletion.
+          </p>
+        </aside>
+
+        <section class="card">
+          <h2>What to include in your message</h2>
+          <ul>
+            <li>Your registered phone number</li>
+            <li>A short description of the issue or request</li>
+            <li>Time and date the issue occurred (if applicable)</li>
+            <li>Any screenshots or error messages</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Response time</h2>
+          <p>
+            We typically respond within <strong>4–5 business days</strong> after
+            receiving your message.
+          </p>
+          <p class="meta">
+            Response times may be longer during holidays or peak support volume.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div>Last updated: 8 March 2026</div>
+      <div class="meta">
+        If you cannot access the app, please try again after updating to the
+        latest version.
+      </div>
+    </footer>
+  </body>
+</html>
